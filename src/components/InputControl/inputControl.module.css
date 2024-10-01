@@ -1,22 +1,63 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    max-width: 100%; /* Ensure it takes up the full width */
+    width: 100%;
+    padding: 15px; /* Add padding for better spacing on smaller screens */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
-label{
+
+label {
     font-weight: 500;
     font-size: 16px;
 }
-input{
+
+input {
     border: 2px solid #151515;
     outline: none;
     padding: 10px 12px;
     border-radius: 5px;
     font-size: 16px;
+    width: 100%; /* Input takes full width */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
-input:hover{
+
+input:hover {
     border-color: #C73659;
 }
-input:focus{
+
+input:focus {
     border-color: #A91D3A;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    label {
+        font-size: 14px; /* Reduce label font size on smaller screens */
+    }
+
+    input {
+        font-size: 14px; /* Adjust input font size */
+        padding: 8px 10px; /* Adjust padding inside the input */
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 8px; /* Further reduce padding for mobile */
+    }
+
+    label {
+        font-size: 13px; /* Smaller label text on mobile */
+    }
+
+    input {
+        font-size: 13px; /* Smaller input text on mobile */
+        padding: 6px 8px; /* Tighter padding for small screens */
+    }
 }

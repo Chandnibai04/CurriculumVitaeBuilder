@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://chandnibai04.github.io/CurriculumVitaeBuilder",
+  "homepage": "https://chandnibai04.github.io/Resume-builder",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
